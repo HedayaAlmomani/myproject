@@ -1,16 +1,22 @@
 .portfolio {
-    padding: 50px;
-    text-align: center;
-  
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-  
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
+  padding: 50px;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
-  
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
