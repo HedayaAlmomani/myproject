@@ -1,0 +1,27 @@
+.map {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+
+    h3 {
+        font-size: 1.8rem;
+        color: #133E87;
+        margin-bottom: 1.5rem;
+        opacity: 0;
+        animation: fadeIn 1s ease forwards;
+    }
+  
+    .map-container {
+      max-width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+  
+    iframe {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+  

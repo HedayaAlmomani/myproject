@@ -1,0 +1,90 @@
+.services-container {
+  .services-title {
+    font-size: 1.8rem;
+    color: #133e87;
+    margin-left: 60px;
+    margin-bottom: 1.5rem;
+    animation: none;
+  }
+  .services {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 1.5rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    .services-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.5s;
+    }
+  
+    .service-card {
+      background-color: #fff;
+      border: 1px solid #e1e5ed;
+      border-radius: 8px;
+      padding: 1.2rem;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      transform: translateY(30px);
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.7s;
+  
+      &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        transform: translateY(-3px);
+      }
+  
+      .service-icon {
+        font-size: 2rem;
+        color: #133E87;
+        margin-bottom: 0.8rem;
+      }
+  
+      h3 {
+        font-size: 1.2rem;
+        color: #133E87;
+        margin-bottom: 0.5rem;
+      }
+  
+      .description {
+        font-size: 0.9rem;
+        color: #555;
+      }
+    }
+  
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  
+}

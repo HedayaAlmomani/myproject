@@ -1,0 +1,64 @@
+.portfolio-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .portfolio-details {
+    padding: 15px;
+    text-align: left;
+
+    h3 {
+      margin: 0 0 10px;
+
+      font-size: 1.35rem;
+      color: #133e87;
+      margin-bottom: 1.5rem;
+      animation: none;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+
+      .tech {
+        background: #007bff;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 0.9rem;
+      }
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #007bff;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 20px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

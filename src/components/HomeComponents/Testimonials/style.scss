@@ -1,0 +1,18 @@
+.testimonials {
+    padding: 40px 20px;
+    background-color: #fff;
+  
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+  
+      .testimonial-card {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-style: italic;
+      }
+    }
+  }
+  
